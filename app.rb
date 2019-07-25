@@ -24,10 +24,12 @@ p "Bonjour, que le premier joueur donne son prénom "
 name_player1 = gets.chomp
 p "Bonjour, que le second joueur donne son prénom "
 name_player2 = gets.chomp
-player1 = Player.new(name_player1)
-player2 = Player.new(name_player2)
+player1 = Player.new(name_player1, "x")
+player2 = Player.new(name_player2, "o")
 player_array = [player1, player2]
 
 game_play = Game.new(player_array, board_game)
 p game_play.players
 p game_play.board
+
+p play_turn("A1")

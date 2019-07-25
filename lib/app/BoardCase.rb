@@ -2,7 +2,7 @@ class BoardCase
     attr_accessor :position, :state
 
     def initialize(position)
-      @state = "y"
+      @state = "empty"
       @position = position
    end
 
